@@ -1,0 +1,147 @@
+body {
+    background-color: #ffffff;
+    display: block;
+    padding: 80px 50px 100px;
+    font-family: sora;
+    color: #525252;
+}
+
+h1 {
+    background-color: #F5C044; 
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 100%;
+    display: inline-flex;
+    color: white;
+    filter: brightness(1.1);
+}
+
+h2, h3 {
+    color: #18181B;
+    font-family: sora;
+}
+.container h2{
+    font-size: 2.25rem;
+}
+.container p{
+    font-size: 1.25rem;
+}
+.container-1 p{
+    font-size: 1rem;
+}
+p {
+    color: #52525A;
+    font-family: sora;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0.5em;
+    font-size: smaller;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('img/Done_ring_round_fill.svg'); /* Path to your SVG */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.google {
+    width: 30%;
+    margin-right: 15px;
+}
+
+.main {
+    display: flex; /* Mengaktifkan Flexbox */ 
+    position: relative;
+}
+
+.container{
+    flex: 1;
+
+}
+.container-1{
+    flex: 1;
+}
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 0px; 
+    font-size: small;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    background-size: 20px;
+
+}
+.card-1{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 0px; 
+    font-size: small;
+    margin-right: 200px;
+    
+}
+.testimonial{
+    display: flex;
+    align-items: center;
+}
+.stars{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.stars img {
+    width: 20px; /* Ukuran bintang */
+    margin-right: 5px; /* Jarak antar bintang */
+}
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Ubah flex menjadi kolom untuk layar kecil */
+    }
+    
+    .container, .container-1 {
+        margin-left: 0; /* Hilangkan margin kiri */
+        margin-right: 0; /* Hilangkan margin kanan */
+        width: 100%; /* Membuat container menempati seluruh lebar layar */
+    }
+
+    .container-1 {
+        margin-top: 20px; /* Memberikan jarak antara .container dan .container-1 */
+    }
+    
+    .card, .card-1 {
+        margin-left: 0;
+        margin-right: 0;
+        width: 60%; /* Menyesuaikan lebar agar sesuai dengan layar kecil */
+    }
+    .card{
+        margin-left: 200px;
+    }
+
+    li {
+        font-size: smaller; /* Mengurangi ukuran teks dalam li */
+    }
+    .stars{
+        justify-content: flex-start;
+    }
+    .stars img {
+        width: 18px; /* Mengatur ukuran bintang agar lebih kecil pada layar kecil */
+    }
+}
